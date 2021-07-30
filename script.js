@@ -26,7 +26,7 @@ scrolling(headerBtn, about);
 
 function checkOffset(element) {
 
-    let startFlag = true;
+    
 
     document.addEventListener('scroll', function() {
 
@@ -39,7 +39,7 @@ function checkOffset(element) {
             element.querySelector('h2').classList.add('title-drive');
         };
 
-        if (element.offsetTop >= (window.scrollY + (element.offsetTop / 2)) ) {
+        if (element.offsetTop >= (window.scrollY + (element.offsetTop / 2)) && element.classList.contains('section-drive') ) {
             element.classList.remove('section-drive')
             element.querySelector('h2').classList.remove('title-drive')
 
