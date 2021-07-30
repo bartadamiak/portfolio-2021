@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Bartosz Adamiak</title>
+</head>
+
+<body>
+   
+
+    <div class="main-site">
+        <header class="header opa-off">
+            <!-- <div class="header-bg"></div> -->
+            <video autoplay muted loop id="myVideo">
+                <source src="images/video.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li id="about-btn">o mnie</li>
+                        <li id="project-btn">projekty</li>
+                        <li id="contact-btn">kontakt</li>
+                    </ul>
+                </nav>
+
+                <div class="title">
+                    <h1 class="header-title">
+                        Bartosz Adamiak
+
+                    </h1>
+                    <p class="header-subtitle">
+                        front-end-developer
+                    </p>
+                </div>
+
+                <!-- <div class="header-btn" id="header-btn">
+                    poznaj mnie
+                </div> -->
+                <div class="read-more-btn hidden">
+                    <p class="read-more-text">
+                        read more
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <section class="about-section" id="about-section">
+            <div class="section-box container">
+                <h2 class="section-title about-title">
+                    <span class="orange ">
+                        1.
+                    </span>
+                    <span class="white">
+                        O mnie
+                    </span>
+                </h2>
+
+                <p class="about-text">
+                    On teada-tuntud fakt, et lehe kujunduse vaatamisel juhib selle loetav sisu lugeja tähelepanu
+                    kõrvale. Lorem Ipsumi kasutamise mõte seisneb selles, et sellel on enam-vähem normaalne jaotus
+                    tähti, mitte nagu korduvatel sõnadel "sisu siin, sisu siin", nähes välja nagu tavaline loetav tekst.
+                    Paljud tekstiredaktorid ja veebilehtede valmistamise programmid kasutavad Lorem Ipsumit vaikimisi
+                    mudeltekstina, ja trükkides otsingusse "lorem ipsum" võib leida veebilehti, mida ei ole veel nende
+                    õige sisuga täidetud. Aastatega on tekkinud mitmeid versioone, mõnikord kogemata, mõnikord meelega
+                    (huumori sisestamisega jne).
+
+
+                </p>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="section-box container">
+                <h2 class="section-title project-title">
+                    <span class="orange ">
+                        2.
+                    </span>
+                    <span class="white">
+                        Projekty
+                    </span>
+
+                </h2>
+
+                <div class="cube">
+                    <div class="back"></div>
+                    <div class="left"></div>
+                    <div class="right"></div>
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                    <div class="front"> </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="section-box container">
+                <h2 class="section-title contact-title">
+                    <span class="orange ">
+                        3.
+                    </span>
+                    <span class="white">
+                        Kontakt
+                    </span>
+                </h2>
+                <div class="contact-icons">
+                    <img src="images/github.png" width="50" height="50" alt="">
+                    <img src="images/linkedin.png" width="50" height="50" alt="">
+                </div>
+                <form action="#" class="form" id="form">
+                    <label for="email">
+                        <input type="email" name="email" id="email">
+                    </label>
+
+                    <label for="textarea">
+                        <textarea name="textarea" id="testarea" cols="30" rows="10"></textarea>
+                    </label>
+                </form>
+                <button type="submit" class="header-btn submit-btn">
+                    wyślij
+                </button>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <p class="footer-text">
+                    designed and coded by Bartosz Adamiak
+                    <br>
+                    Icons made by <a href="https://www.flaticon.com/authors/roundicons"
+                        title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/"
+                        title="Flaticon">www.flaticon.com</a>
+                    <br>
+                    Zdjęcie autorstwa Soumil Kumar z Pexels
+                    <br>
+                    Wideo (autor: Dimitar Dimitrov) z Pexels
+                </p>
+
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
