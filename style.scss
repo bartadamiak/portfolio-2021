@@ -311,7 +311,7 @@ h1 {
 .about-title {
     
     font-family: 'Orbitron', sans-serif;
-    font-size: 5rem;
+
     grid-column: 2 / 5;
 }
 
@@ -337,44 +337,50 @@ h1 {
     color: #f1f1f1;
     
     font-family: 'Orbitron', sans-serif;
-    font-size: 5rem;
+ 
     justify-content: center;
 }
 
 .project-box {
     cursor: pointer;
+    // background-color: rgba($color: #ffffff, $alpha: 0.15);
+    // backdrop-filter: blur(5px);
+   
+}
+
+.project-photo {
+    width: 100%;
+    border-radius: 15px;
+    opacity: 0.1;
+    transition: 0.3s;
+}
+
+.project-photo:hover {
+    opacity: 1;
 }
 
 .first-project {
     grid-column: 2 / 4;
 
-    img {
-        width: 100%;
-    }
+    
 }
 
 .second-project {
     grid-column: 4 / 6;
 
-    img {
-        width: 100%;
-    }
+  
 }
 
 .third-project {
     grid-column: 2 / 4;
 
-    img {
-        width: 100%;
-    }
+   
 }
 
 .fourth-project {
     grid-column: 4 / 6;
 
-    img {
-        width: 100%;
-    }
+    
 }
 
 
@@ -389,20 +395,11 @@ h1 {
 
 .contact-title {
     font-family: 'Orbitron', sans-serif;
-    font-size: 5rem;
+ 
     grid-column: 2 / 5;
 }
 
-.contact-icons {
-    grid-column: 2 / 5;
-    grid-row: 2 / 3;
-    display: flex;
-    justify-content: flex-start;
 
-    img:nth-child(1) {
-        margin-right: 2rem;
-    }
-}
 
 .form {
     grid-column: 7 / 12;
@@ -437,11 +434,28 @@ h1 {
 .submit-btn {
     grid-column: 7 / 12;
     margin-top: 2rem;
+    border: 1px solid #F5AE13;
+    border-radius: 8px;
+    outline: none;
+    background: none;
+    color: #F1F1F1;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #f1f1f1;
+    color: #F5AE13;
 }
 
 /// footer \\\
 
 .footer {
+    font-family: 'Orbitron', sans-serif;
     margin-top: 5rem;
     padding: 5rem 0;
     color: #F1F1F1;
@@ -451,7 +465,8 @@ h1 {
 }
 
 .footer-text {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
     text-align: center;
     grid-column: 1 / 13;
 }
@@ -554,6 +569,21 @@ h1 {
 
 //// media \\\\
 
+@media (max-width: 1100px) {
+    .orange {
+        color: #F5AE13;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 3.5rem;
+    }
+    
+    .white {
+        color: #f1f1f1;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 3.5rem;
+    }
+    
+}
+
 @media (max-width: 826px) {
     
     h1 {
@@ -567,6 +597,97 @@ h1 {
         0% {width: 0;}
         100% {width: 69%;}
     }
+    
+    .about-title {
+        grid-column: 2 / 12;
+    }
+    
+    .about-text {
+        grid-column: 2 / 12;
+        margin-top: 2rem;
+        font-size: 1.6rem;
+    }
+    .project-title {
+        grid-column: 2 / 12;
+     
+    }
+
+    .first-project {
+        margin-top:2rem;
+        grid-column: 2 / 7;
+        img {
+            width: 100%;
+        }
+    }
+    
+    .second-project {
+        grid-column: 7 / 12;
+        margin-top: 2rem;
+    
+        img {
+            width: 100%;
+        }
+    }
+    
+    .third-project {
+        grid-column: 2 / 7;
+        img {
+            width: 100%;
+        }
+    }
+    
+    .fourth-project {
+        grid-column: 7 / 12;
+       
+    
+        img {
+            width: 100%;
+        }
+    }
+
+    .contact-title {
+        grid-column: 2 / 12;
+    }
+    
+    .form {
+        grid-column: 2 / 12;
+        margin-top: 2rem;
+        
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 2rem;
+            background-color: #212121;
+            color: #F1F1F1;
+            font-size: 2rem;
+            padding: 2rem;
+            border: 1px solid #F5AE13;
+            border-radius: 8px;
+            outline: none;
+    
+        }
+        textarea {
+            display: block;
+            width: 100%;
+            background-color: #212121;
+            color: #F1F1F1;
+            font-size: 2rem;
+            padding: 2rem;
+            resize: none;
+            border: 1px solid #F5AE13;
+            border-radius: 8px;
+            outline: none;
+        }
+    }
+    
+    .submit-btn {
+        grid-column: 2 / 7;
+        margin-top: 2rem;
+    }
+
+
+
+
 }
 
 @media (max-width: 691px) {

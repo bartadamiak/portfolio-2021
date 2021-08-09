@@ -14,6 +14,7 @@ const header = document.querySelector('.header')
 function scrolling(button, section) {
     button.addEventListener('click', function () {
         section.scrollIntoView();
+        element.classList.remove('section-drive-back');
         section.classList.add('section-drive')
     })
 }
