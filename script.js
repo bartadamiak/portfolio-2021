@@ -27,20 +27,20 @@ scrolling(headerBtn, about);
 
 function checkOffset(element) {
 
-    
 
-    document.addEventListener('scroll', function() {
 
-        
+    document.addEventListener('scroll', function () {
+
+
         if (element.offsetTop <= (window.scrollY + (element.offsetTop / 2))) {
             element.classList.remove('section-drive-back')
             element.querySelector('h2').classList.remove('title-drive-back')
-            
+
             element.classList.add('section-drive')
             element.querySelector('h2').classList.add('title-drive');
         };
 
-        if (element.offsetTop >= (window.scrollY + (element.offsetTop / 2)) && element.classList.contains('section-drive') ) {
+        if (element.offsetTop >= (window.scrollY + (element.offsetTop / 2)) && element.classList.contains('section-drive')) {
             element.classList.remove('section-drive')
             element.querySelector('h2').classList.remove('title-drive')
 
@@ -49,9 +49,9 @@ function checkOffset(element) {
 
         }
 
-        
+
     })
-   
+
 
 }
 
@@ -66,7 +66,7 @@ checkOffset(contact)
 function checkOffsetHeader(element) {
     let heightToAction = element.offsetHeight / 1.9;
     let actualOffset = element.offsetTop + heightToAction;
-    
+
 
     document.addEventListener('scroll', function () {
         let windowPosition = window.scrollY;
@@ -74,7 +74,7 @@ function checkOffsetHeader(element) {
         if (windowPosition >= actualOffset) {
             element.classList.add('opa-on')
             element.classList.remove('opa-off')
-            
+
         };
 
         if (windowPosition <= actualOffset) {
@@ -82,18 +82,20 @@ function checkOffsetHeader(element) {
             element.classList.remove('opa-on')
         }
 
-        
-        
-      
+
+
+
     })
-    
-   
+
+
 
 }
 
 checkOffsetHeader(header);
 
-setTimeout(function() {
+setTimeout(function () {
     headerBtn.classList.remove('hidden');
     navigation.classList.remove('hidden')
 }, 7000)
+
+
