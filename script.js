@@ -96,6 +96,23 @@ checkOffsetHeader(header);
 setTimeout(function () {
     headerBtn.classList.remove('hidden');
     navigation.classList.remove('hidden')
-}, 7000)
+}, 300)
 
+
+
+const projectBoxes = document.querySelectorAll('.project-box');
+
+
+// projectBoxes.forEach(element => {
+//     element.addEventListener('mouseenter', function() {
+//         this.firstElementChild.classList.toggle('hide');
+//         this.classList.toggle('card-effect');
+
+        
+        
+//     })
+
+
+    
+// });
 
