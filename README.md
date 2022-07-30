@@ -1,3 +1,3 @@
 Project in progress 
 
-http://bartadamiak.site
+http://bartadamiak.biz.pl
